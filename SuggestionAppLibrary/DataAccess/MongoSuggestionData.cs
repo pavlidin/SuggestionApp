@@ -14,6 +14,7 @@ public class MongoSuggestionData : ISuggestionData
         _db = db;
         _userData = userData;
         _cache = cache;
+        _suggestions = db.SuggestionCollection;
     }
 
     public async Task<List<SuggestionModel>> GetAllSuggestions()
