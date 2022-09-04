@@ -37,19 +37,13 @@
                         <div>@GetUpvoteBottomText(s)</div>
                     </div>
                     <div>
-                        <div @onclick="(() => OpenDetails(s))">
-                            @s.Suggestion
-                        </div>
+                        <div @onclick="(() => OpenDetails(s))">@s.Suggestion</div>
                         <div>
-                            <div @onclick="(() => OpenDetails(s))">
-                                @s.Category?.CategoryName
-                            </div>
+                            <div @onclick="(() => OpenDetails(s))">@s.Category?.CategoryName</div>
                         </div>
                     </div>
                     <div>
-                        <div>
-                            @s.SuggestionStatus?.StatusName
-                        </div>
+                        <div>@s.SuggestionStatus?.StatusName</div>
                     </div>
                 </div>
             </Virtualize>
